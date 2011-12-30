@@ -20,6 +20,7 @@ package org.openengsb.domain.deploy;
 import org.openengsb.core.api.Domain;
 import org.openengsb.core.api.Raises;
 
+// @extract-start DeployDomain
 /**
  * This domain can be used to deploy projects. The affected project is usually configured in the respective tool
  * connector.
@@ -41,3 +42,4 @@ public interface DeployDomain extends Domain {
     @Raises({ DeployStartEvent.class, DeployFailEvent.class, DeploySuccessEvent.class })
     void deploy(long processId);
 }
+// @extract-end

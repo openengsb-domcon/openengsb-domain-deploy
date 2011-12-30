@@ -19,6 +19,7 @@ package org.openengsb.domain.deploy;
 
 import org.openengsb.core.api.DomainEvents;
 
+// @extract-start DeployDomainEvents
 public interface DeployDomainEvents extends DomainEvents {
 
     void raiseEvent(DeployStartEvent e);
@@ -30,3 +31,4 @@ public interface DeployDomainEvents extends DomainEvents {
 
     void raiseEvent(DeploySuccessEvent e);
 }
+// @extract-end
