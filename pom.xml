@@ -47,6 +47,8 @@
     Deploy Domain is used to deploy projects. The type of project is configured in
     in the respective tool connector.
   </description>
+  
+  <inceptionYear>2009</inceptionYear>
 
   <url>http://www.openengsb.org</url>
 
@@ -64,6 +66,16 @@
     <url>http://github.com/openengsb/openengsb-domain-depoy</url>
   </scm>
 
+  <issueManagement>
+    <system>JIRA</system>
+    <url>http://issues.openengsb.org/jira/browse/OPENENGSB</url>
+  </issueManagement>
+
+  <ciManagement>
+    <system>OpenCIT</system>
+    <url>http://build.openengsb.org/opencit/</url>
+  </ciManagement>
+  
   <build>
     <plugins>
       <plugin>
