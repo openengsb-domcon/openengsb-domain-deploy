@@ -32,7 +32,7 @@
     <bundle.symbolicName>org.openengsb.domain.deploy</bundle.symbolicName>
     <bundle.namespace>org.openengsb.domain.deploy</bundle.namespace>
     <openengsb.compile.version>2.1.2</openengsb.compile.version>
-    <domain.name>Deploy</domain.name>
+    <domain.name>DeployDomain</domain.name>
   </properties>
 
   <groupId>org.openengsb.domain</groupId>
