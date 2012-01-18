@@ -19,6 +19,7 @@ package org.openengsb.domain.deploy;
 
 import org.openengsb.core.api.Domain;
 import org.openengsb.core.api.Raises;
+import org.openengsb.core.api.model.OpenEngSBFileModel;
 
 // @extract-start DeployDomain
 /**
@@ -28,18 +29,18 @@ import org.openengsb.core.api.Raises;
 public interface DeployDomain extends Domain {
 
     /**
-     * Deploy the currently configured project. This method returns at once with an id. The deploy process is conducted
+     * Deploy the project in 'path'. This method returns at once with an id. The deploy process is conducted
      * asynchronously. The result can be retrieved using the events raised by this domain, which also contain the id.
      */
     @Raises({ DeployStartEvent.class, DeployEndEvent.class })
-    String deploy();
+    String deploy(OpenEngSBFileModel path);
 
     /**
-     * Deploy the currently configured project. This method returns at once with an id. The deploy process is conducted
+     * Deploy the project in 'path'. This method returns at once with an id. The deploy process is conducted
      * asynchronously. The result can be retrieved using the events raised by this domain where the processId-field
      * contains the supplied processId
      */
     @Raises({ DeployStartEvent.class, DeployFailEvent.class, DeploySuccessEvent.class })
-    void deploy(long processId);
+    void deploy(OpenEngSBFileModel path, long processId);
 }
 // @extract-end
