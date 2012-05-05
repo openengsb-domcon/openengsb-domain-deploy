@@ -19,12 +19,20 @@ package org.openengsb.domain.deploy;
 
 public class DeploySuccessEvent extends DeployEndEvent {
 
-    public DeploySuccessEvent(long processId, String output) {
+    private String artifactLocation;
+
+    public DeploySuccessEvent(long processId, String output, String location) {
         super(processId, output);
+        this.artifactLocation = location;
     }
 
-    public DeploySuccessEvent(String deployId, String output) {
+    public DeploySuccessEvent(String deployId, String output, String location) {
         super(deployId, output);
+        this.artifactLocation = location;
+    }
+
+    public String getArtifactLocation() {
+        return artifactLocation;
     }
 
 }
