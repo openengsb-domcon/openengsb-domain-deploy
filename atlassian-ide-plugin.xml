@@ -1,0 +1,13 @@
+<atlassian-ide-plugin>
+  <project-configuration>
+    <servers>
+      <jira>
+        <server-id>f6f62d9f-8826-438a-8c45-cf8589ddfd9d</server-id>
+        <name>OpenEngSB</name>
+        <url>http://issues.openengsb.org/jira</url>
+        <shared>false</shared>
+      </jira>
+    </servers>
+    <default-jira-server>f6f62d9f-8826-438a-8c45-cf8589ddfd9d</default-jira-server>
+  </project-configuration>
+</atlassian-ide-plugin>
